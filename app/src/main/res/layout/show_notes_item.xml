@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/notes_icon"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_width="80px"
+        android:layout_height="80px" />
+    <TextView
+        android:id="@+id/notes_title"
+        android:textSize="15pt"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/notes_icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:id="@+id/notes_date"
+        android:layout_alignBottom="@id/notes_icon"
+        android:layout_toRightOf="@id/notes_icon"
+        android:layout_below="@id/notes_title"
+        android:gravity="bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+    <TextView
+        android:id="@+id/notes_content"
+        android:layout_toRightOf="@id/notes_date"
+        android:layout_marginLeft="30px"
+        android:layout_alignTop="@id/notes_date"
+        android:layout_alignBottom="@id/notes_date"
+        android:gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <ImageButton
+        android:id="@+id/notes_delete"
+        android:background="@drawable/trash2"
+        android:focusable="false"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@id/notes_icon"
+        android:layout_width="60px"
+        android:layout_height="80px" />
+</RelativeLayout>

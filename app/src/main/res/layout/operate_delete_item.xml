@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80px">
+    <CheckBox
+        android:id="@+id/select_all"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:text="全选"
+        android:layout_width="wrap_content"
+        android:layout_height="80px" />
+    <TextView
+        android:id="@+id/select_hint"
+        android:gravity="center"
+        android:text="一共选了0个选项."
+        android:layout_toRightOf="@id/select_all"
+        android:layout_marginLeft="40px"
+        android:layout_width="wrap_content"
+        android:layout_height="80px" />
+    <Button
+        android:id="@+id/confirm"
+        android:background="@android:color/transparent"
+        android:text="删除"
+        android:textSize="12pt"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="80px"
+        />
+</RelativeLayout>

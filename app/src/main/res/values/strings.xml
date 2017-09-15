@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Notepad</string>
+    <string name="register_hint">请注意,用户名只能为数字且小于11位,密码只能为数字或者字母.不大于12位,不小于6位</string>
+</resources>

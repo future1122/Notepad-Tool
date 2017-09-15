@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="300dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register_hint"
+        android:textColor="#00f"
+        android:textSize="9pt"
+        android:background="@android:color/transparent"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/user_hint"
+            android:text="user"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_toRightOf="@id/user_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:id="@+id/rigister_user"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/password_hint"
+            android:inputType="text"
+            android:text="password"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_toRightOf="@id/password_hint"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rigister_password"/>
+    </RelativeLayout>
+
+</LinearLayout>
