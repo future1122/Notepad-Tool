@@ -448,7 +448,10 @@ public class MainActivity extends AppCompatActivity {
                                 editor.commit();
                                 notes.add(note);
                                 if(isDeletingByQuery) handler.sendEmptyMessage(UPDATE_DELETE_VIEW);
-                                else handler.sendEmptyMessage(UPDATE_LISTVIEW);
+                                else {
+                                    search();
+                                    handler.sendEmptyMessage(UPDATE_LISTVIEW);
+                                }
                                 break;
                             //更新note
                             case UPDATE_NOTE:
@@ -460,7 +463,10 @@ public class MainActivity extends AppCompatActivity {
                                 editor.putString(editingNote.contentKey,editingNote.content);
                                 editor.commit();
                                 if(isDeletingByQuery) handler.sendEmptyMessage(UPDATE_DELETE_VIEW);
-                                else handler.sendEmptyMessage(UPDATE_LISTVIEW);
+                                else {
+                                    search();
+                                    handler.sendEmptyMessage(UPDATE_LISTVIEW);
+                                }
                                 break;
                         }
                         break;
@@ -483,8 +489,11 @@ public class MainActivity extends AppCompatActivity {
         }
         //初始化界面信息
         if(isDeletingByQuery) handler.sendEmptyMessage(UPDATE_DELETE_VIEW);
-        else handler.sendEmptyMessage(UPDATE_LISTVIEW);
+        else {
+            search();
+            handler.sendEmptyMessage(UPDATE_LISTVIEW);
 
+        }
     }
     //出现批量操作界面
     private void showDelete(){
