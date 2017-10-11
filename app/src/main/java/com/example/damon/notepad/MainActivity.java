@@ -488,9 +488,10 @@ public class MainActivity extends AppCompatActivity {
             note.content = preferences.getString(note.contentKey,"没有获取到记事内容");
         }
         //初始化界面信息
+        search();
         if(isDeletingByQuery) handler.sendEmptyMessage(UPDATE_DELETE_VIEW);
         else {
-            search();
+
             handler.sendEmptyMessage(UPDATE_LISTVIEW);
 
         }
