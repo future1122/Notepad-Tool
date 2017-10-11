@@ -13,7 +13,7 @@
             android:layout_alignParentLeft="true"
             android:id="@+id/exit_edit"
             android:layout_width="wrap_content"
-            android:layout_height="100px" />
+            android:layout_height="50dp" />
         <Button
             android:id="@+id/save"
             android:text="保存"
@@ -21,7 +21,7 @@
             android:layout_alignParentRight="true"
             android:layout_gravity="right|center_horizontal"
             android:layout_width="wrap_content"
-            android:layout_height="100px" />
+            android:layout_height="50dp" />
         <TextView
             android:id="@+id/title_textview"
             android:layout_below="@id/exit_edit"
@@ -29,14 +29,14 @@
             android:text="标题:"
             android:textSize="17pt"
             android:layout_width="wrap_content"
-            android:layout_height="100px" />
+            android:layout_height="50dp" />
         <EditText
             android:layout_toRightOf="@id/title_textview"
             android:layout_below="@id/exit_edit"
             android:id="@+id/title_edit"
             android:inputType="text"
             android:layout_width="match_parent"
-            android:layout_height="100px" />
+            android:layout_height="50dp" />
     </RelativeLayout>
     <ScrollView
         android:layout_width="match_parent"

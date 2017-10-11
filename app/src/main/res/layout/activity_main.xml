@@ -6,7 +6,7 @@
     <RelativeLayout
         android:id="@+id/search_layout"
         android:layout_width="wrap_content"
-        android:layout_height="80px"
+        android:layout_height="40dp"
         android:focusable="true"
         android:focusableInTouchMode="true">
         <Button
@@ -14,7 +14,7 @@
             android:text="取消"
             android:background="@android:color/transparent"
             android:layout_alignParentRight="true"
-            android:layout_width="70px"
+            android:layout_width="35dp"
             android:layout_height="match_parent" />
         <Spinner
             android:id="@+id/search_type"
@@ -51,7 +51,7 @@
             android:layout_alignParentLeft="true"
             android:text="全选"
             android:layout_width="wrap_content"
-            android:layout_height="80px" />
+            android:layout_height="40dp" />
         <TextView
             android:id="@+id/select_hint"
             android:gravity="center"
@@ -59,7 +59,7 @@
             android:layout_toRightOf="@id/select_all"
             android:layout_marginLeft="40px"
             android:layout_width="wrap_content"
-            android:layout_height="80px" />
+            android:layout_height="40dp" />
         <Button
             android:id="@+id/confirm"
             android:background="@android:color/transparent"
@@ -68,7 +68,7 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentRight="true"
             android:layout_width="wrap_content"
-            android:layout_height="80px"
+            android:layout_height="40dp"
             />
     </RelativeLayout>
     <ListView

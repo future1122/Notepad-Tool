@@ -7,8 +7,8 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:background="@drawable/logo01"
-        android:layout_width="80px"
-        android:layout_height="80px" />
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
     <TextView
         android:id="@+id/notes_title"
         android:textSize="15pt"
@@ -28,7 +28,7 @@
     <TextView
         android:id="@+id/notes_content"
         android:layout_toRightOf="@id/notes_date"
-        android:layout_marginLeft="30px"
+        android:layout_marginLeft="15dp"
         android:layout_alignTop="@id/notes_date"
         android:layout_alignBottom="@id/notes_date"
         android:gravity="bottom"
