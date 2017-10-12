@@ -10,6 +10,7 @@ import android.os.Handler;
 import android.os.Message;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -55,6 +56,8 @@ public class MainActivity extends AppCompatActivity {
     final static String CONTENT = "content";
     final static String DATE = "date";
 
+    private long firstTime = 0;
+    private long secondTime = 0;
     int searchTypes = SEARCH_DATE;
     //用户名
     String loginName;
@@ -496,6 +499,22 @@ public class MainActivity extends AppCompatActivity {
 
         }
     }
+
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if(keyCode == KeyEvent.KEYCODE_BACK){
+            secondTime = System.currentTimeMillis();
+            if(secondTime - firstTime < 2000){
+                finish();
+            }else{
+                firstTime = secondTime;
+                Toast.makeText(this, "再点击一次后退键退出程序", Toast.LENGTH_SHORT).show();
+                return true;
+            }
+        }
+        return super.onKeyDown(keyCode, event);
+    }
+
     //出现批量操作界面
     private void showDelete(){
         RelativeLayout rl = (RelativeLayout) findViewById(R.id.operate_delete);
