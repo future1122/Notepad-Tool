@@ -5,7 +5,7 @@
     <RelativeLayout
         android:background="@drawable/edit_note_title"
         android:layout_width="match_parent"
-        android:layout_height="200px">
+        android:layout_height="100dp">
         <Button
             android:text="退出编辑"
             android:background="@android:color/transparent"
